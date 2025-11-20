@@ -24,15 +24,6 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-```
-admin.py
-
-from django.contrib import admin
-from .models import amazon_DB,amazon_DBAdmin
-admin.site.register(amazon_DB,amazon_DBAdmin)
-
-models.py
-
 from django.db import models 
 from django.contrib import admin
 class amazon_DB (models.Model):
@@ -44,12 +35,18 @@ class amazon_DB (models.Model):
 class amazon_DBAdmin(admin.ModelAdmin):
      list_display=["Product_name","S_no","Product_type","Price","Year"]
 
+admin.py
+
+from django.contrib import admin
+from .models import amazon_DB,amazon_DBAdmin
+admin.site.register(amazon_DB,amazon_DBAdmin)
 
 
 
 ## OUTPUT
 
-Screenshot 2025-11-20 144015.png
+<img width="1911" height="1017" alt="Screenshot 2025-11-20 144015" src="https://github.com/user-attachments/assets/f339464b-e152-4a96-bcc7-c19309b92f94" />
+
 
 
 ## RESULT
